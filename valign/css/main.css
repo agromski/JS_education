@@ -1,0 +1,37 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	background: lightyellow;
+}
+#wrapper{
+	padding: 100px 0;
+	width: 960px;
+	margin: 0 auto;
+}
+#content{
+	background: blue;
+	padding: 20px;
+}
+/* valign */
+.valign{
+	background: lightgreen;
+	width: 600px;
+	height: 600px;
+	margin: 0 0 20px;
+}
+.valign.size_400x300{
+	width: 400px;
+	height: 300px;
+}
+.valign.size_600x300{
+	width: 600px;
+	height: 300px;
+}
+.valign img{
+	vertical-align: top;
+}
+

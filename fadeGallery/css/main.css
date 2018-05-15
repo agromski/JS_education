@@ -1,0 +1,82 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	background: lightyellow;
+}
+#wrapper{
+	padding: 100px 0;
+	width: 960px;
+	margin: 0 auto;
+}
+#content{
+	background: blue;
+	padding: 20px;
+}
+/* fade-carousel */
+.fade-carousel{
+	position: relative;
+	padding: 0 50px;
+	margin: 0 0 100px;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+.fade-carousel .slideset{
+	position: relative;
+}
+.fade-carousel .slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: lightgreen;
+	border: 3px solid #000;
+	padding: 10px;
+	width: 100%;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+.fade-carousel .slide.b1{
+	background: pink;
+}
+.fade-carousel .slide.b2{
+	background: lightblue;
+}
+.fade-carousel .slide.b3{
+	background: lightyellow;
+}
+.fade-carousel .slide.b4{
+	background: red;
+}
+.fade-carousel .btn-next,
+.fade-carousel .btn-prev{
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 30px;
+}
+.fade-carousel .btn-next{
+	left: auto;
+	right: 0;
+}
+.fade-carousel .controls{
+	font-size: 20px;
+	text-align: center;
+	padding: 0 0 20px;
+	position: relative;
+}
+.fade-carousel .btn-pause{
+	left: auto;
+	right: 0;
+	margin: 0 15px;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	text-decoration: none;
+}
+.fade-carousel .btn-pause:hover{
+	color: yellow;
+}

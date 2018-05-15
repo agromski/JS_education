@@ -1,0 +1,262 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	background: lightyellow;
+}
+#wrapper{
+	padding: 100px 0;
+	width: 960px;
+	margin: 0 auto;
+	background: green;
+}
+#content{
+	background: blue;
+	padding: 20px;
+}
+.items{
+	display: flex;
+	flex-wrap: wrap;
+}
+.item{
+	flex-basis:33.33%;
+	padding: 20px;
+	display: flex;
+	margin: 0 0 10px;
+}
+.item-holder{
+	flex-grow: 1;
+	background: pink;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.item:nth-child(2) .item-holder{
+	justify-content: space-around;
+}
+.item strong{
+	font-size: 20px;
+	display: block;
+}
+.main{
+	overflow: hidden;
+}
+.sameheight{
+	overflow: hidden;
+	padding: 20px;
+}
+.sameheight section{
+	float: left;
+	padding: 10px;
+	width: 33.33%;
+}
+.block{
+	background: lightblue;
+}
+
+/* valign */
+.valign{
+	background: lightyellow;
+	width: 600px;
+	height: 600px;
+	margin: 0 0 20px;
+}
+.valign.size_400x300{
+	width: 400px;
+	height: 300px;
+}
+.valign.size_600x300{
+	width: 600px;
+	height: 300px;
+}
+.valign img{
+	vertical-align: top;
+}
+
+/* popup-block_simple */
+.popup-block_simple{
+	position: relative;
+	margin: 0 0 20px;
+
+}
+.popup-block_simple .btn{
+	background: tomato;
+	border: 1px solid darkblue;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.popup-block_simple .popup{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 150px;
+	background: #fff;
+	border: 1px solid darkblue;
+	padding: 10px;
+	z-index: 10;
+	display: none;
+}
+
+/* popup-block_with_add_class */
+.popup-block_with_add_class{
+	position: relative;
+	margin: 0 0 20px;
+
+}
+.popup-block_with_add_class .btn{
+	background: lightgreen;
+	border: 1px solid darkblue;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.popup-block_with_add_class .popup{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 150px;
+	background: #fff;
+	border: 1px solid darkblue;
+	padding: 10px;
+	z-index: 10;
+	display: none;
+}
+.popup-block_with_add_class.active .popup{
+	display: block;
+}
+
+/* description */
+.description{
+	background: lightgreen;
+	padding: 15px;
+	margin: 0 0 50px;
+}
+.description p{
+	margin: 0;
+}
+.description a{
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+}
+
+/* fade-carousel */
+.fade-carousel{
+	position: relative;
+	padding: 0 50px;
+	margin: 0 0 100px;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+.fade-carousel .slideset{
+	position: relative;
+}
+.fade-carousel .slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: lightgreen;
+	border: 3px solid #000;
+	padding: 10px;
+	width: 100%;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+.fade-carousel .slide.b1{
+	background: pink;
+}
+.fade-carousel .slide.b2{
+	background: lightblue;
+}
+.fade-carousel .slide.b3{
+	background: lightyellow;
+}
+.fade-carousel .slide.b4{
+	background: red;
+}
+.fade-carousel .btn-next,
+.fade-carousel .btn-prev{
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 30px;
+}
+.fade-carousel .btn-next{
+	left: auto;
+	right: 0;
+}
+.fade-carousel .controls{
+	font-size: 20px;
+	text-align: center;
+	padding: 0 0 20px;
+	position: relative;
+}
+.fade-carousel .btn-pause{
+	left: auto;
+	right: 0;
+	margin: 0 15px;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	text-decoration: none;
+}
+.fade-carousel .btn-pause:hover{
+	color: yellow;
+}
+/*footer*/
+#footer{
+	background: red;
+}
+
+/*timer-block*/
+.timer-block{
+	background: lightyellow;
+	padding: 100px;
+	user-select: none;
+}
+.timer-block input{
+	padding: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.timer-block .btn{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 30px;
+	font-weight: 700;
+	cursor: pointer;
+	margin: 0 15px;
+}
+.timer-block .btn:hover{
+	color: green;
+}
+.timer-block .btn-reset,
+.timer-block .btn-start{
+	color: green;
+	display: inline-block;
+	vertical-align: middle;
+	background: pink;
+	color: red;
+	padding: 5px;
+	cursor: pointer;
+	margin: 0 5px;
+}
+.timer-block .btn-reset:hover,
+.timer-block .btn-start:hover{
+	opacity: .8;
+}
+.timer-block .btn-reset{
+	background: skyblue;
+	color: blue;
+}

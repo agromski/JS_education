@@ -1,0 +1,46 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	background: lightyellow;
+}
+#wrapper{
+	padding: 100px 0;
+	width: 960px;
+	margin: 0 auto;
+}
+#content{
+	background: blue;
+	padding: 20px;
+}
+.tabset{
+	padding:0;
+	margin:0;
+	list-style:none;
+	font-weight: bold;
+}
+.tabset li{
+	display: inline-block;
+	vertical-align: top;
+	min-width: 100px;
+	text-align: center;
+}
+.tabset a{
+	display: block;
+	padding: 10px;
+	color: inherit;
+	background: gray;
+	text-decoration: none;
+}
+.tabset li:nth-child(1) .active{
+	background: lightblue;
+}
+.tabset li:nth-child(2) .active{
+	background: lightgreen;
+}
+.tabset li:nth-child(3) .active{
+	background: pink;
+}
