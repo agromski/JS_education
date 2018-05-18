@@ -7,8 +7,12 @@ body{
 	margin: 0;
 	background: lightyellow;
 }
-.container{
+#wrapper{
 	max-width: 1200px;
+	padding: 20px;
 	margin: 0 auto;
+}
+.btn-delete{
+	margin-left: 15px;
 }
 
