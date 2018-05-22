@@ -10,7 +10,7 @@ var array = [{
 	},
 	{
 		title: "Постирать",
-		done: true,
+		done: false,
 	},
 	{
 		title: "Вынести мусор",
@@ -30,6 +30,8 @@ function toDoList() {
 	var form = $('.add-form');
 	var input = form.find('input');
 	var listContainer = $('.my-list');
+	var total = $('.total-value');
+	var subtotal = $('.subtotal-value');
 
 
 	renderList();
@@ -46,17 +48,24 @@ function toDoList() {
 		removeItem(this.dataset.index);
 	});
 
+	$(listContainer).on('click', '.checkbox', function(){
+		reverseValue(this.dataset.index);
+	});
 
 
+	// renderList
 	function renderList() {
 		var list = '';
 		$(array).each(function (index, item) {
-			var checkbox = (item.done) ? '<input type="checkbox" checked>' : '<input type="checkbox">';
+			var checkbox = (item.done) ? '<span class="checkbox" data-index="' + index + '">[x]</span>' : '<span class="checkbox" data-index="' + index + '">[ ]</span>';
 			list = list + '<li>' + checkbox + item.title + '<a href="#" data-index="' + index + '" class="btn-delete">Delete</a>' + '</li>';
 		});
 		listContainer.html(list);
+		total.html(array.length);
+		subtotal.html(array.filter(function(el) { return !el.done; }).length);
 	};
 
+	// addItem
 	function addItem(value) {
 		var o = {
 			title: value,
@@ -66,10 +75,17 @@ function toDoList() {
 		renderList();
 	};
 
+	//removeItem
 	function removeItem(index) {
 		array.splice(index, 1);
 		renderList();
-	}
+	};
+
+	// reverseValue
+	function reverseValue(index) {
+		array[index].done=!array[index].done;
+		renderList();
+	};
 
 };
 

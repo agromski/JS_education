@@ -15,4 +15,31 @@ body{
 .btn-delete{
 	margin-left: 15px;
 }
+.checkbox{
+	cursor: pointer;
+}
+dl{
+	margin: 0;
+	line-height: 25px;
+}
+dt{
+	float: left;
+	clear: left;
+	margin: 0 10px 0 0;
+}
+dd{
+	font-weight: bold;
+	color: #f00;
+	overflow: hidden;
+	margin: 0 0 15px;
+}
+.total{
+	font-weight: bold;
+	font-size: 20px;
+}
+.subtotal{
+	font-weight: bold;
+	font-style: italic;
+	color: purple;
+}
 
