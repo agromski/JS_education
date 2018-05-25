@@ -6,21 +6,108 @@
 body{
 	margin: 0;
 	background: lightyellow;
+	font: 14px/1.2 'Exo', Arial, Helvetica, sans-serif;
+	color: #666;
+}
+button:focus{
+	outline: none;
 }
 #wrapper{
 	max-width: 1200px;
 	padding: 20px;
 	margin: 0 auto;
 }
+.add-form{
+	display: inline-block;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 0 0 40px;
+}
+.add-form input[type="text"]{
+	height: 40px;
+	padding: 5px 10px;
+	border: none;
+	min-width: 200px;
+	font-size: 16px;
+	outline: none;
+	color: #666;
+	float: left;
+}
+.add-form input[type='text']::placeholder{
+	color: #b5b5b5;
+}
+.add-form button[type="submit"] {
+	border: none;
+	height: 40px;
+	line-height: 40px;
+	text-transform: uppercase;
+	background: #3dbce0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 600;
+	min-width: 80px;
+	float: left;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+.add-form button[type="submit"]:hover{
+	background: #22abd3;
+}
+.check-all{
+	display: block;
+	font:bold 12px/1.2 Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	position: relative;
+	padding: 0 0 0 20px;
+	margin: 0 0 15px;
+}
+.check-all .icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 14px;
+}
+.check-all:hover{
+	color: #000;
+}
+.my-list{
+	padding:0;
+	margin:0 0 20px;
+	list-style:none;
+}
+.my-list li{
+	margin: 0 0 10px;
+}
 .btn-delete{
 	margin-left: 15px;
 }
+.btn-delete i{
+	color: #f00;
+}
 .checkbox{
 	cursor: pointer;
+	margin: 0 10px 0 0;
+}
+.btn-hide{
+	background: #1bb8a3;
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	height: 30px;
+	border-radius: 4px;
+	padding: 5px 10px;
+	cursor: pointer;
+	transition: background 0.3s;
+	margin: 0 0 15px;
+}
+.btn-hide:hover{
+	background: #000;
 }
 dl{
 	margin: 0;
-	line-height: 25px;
 }
 dt{
 	float: left;
@@ -28,18 +115,27 @@ dt{
 	margin: 0 10px 0 0;
 }
 dd{
-	font-weight: bold;
-	color: #f00;
-	overflow: hidden;
-	margin: 0 0 15px;
+	color: #3dbce0;
+	margin: 0 0 10px;
 }
 .total{
 	font-weight: bold;
 	font-size: 20px;
+	line-height: 33px;
+}
+.total-value{
+	font-size: 25px;
 }
 .subtotal{
 	font-weight: bold;
+	line-height: 22px;
+}
+.subtotal-value{
+	font-size: 18px;
+}
+.default-text{
+	font-size: 40px;
 	font-style: italic;
-	color: purple;
+	opacity: .8;
 }
 
