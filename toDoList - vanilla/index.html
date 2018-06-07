@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Test</title>
+	<link href="https://fonts.googleapis.com/css?family=Exo:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="wrapper">
+		<form class="add-form">
+			<input type="text" placeholder="Type ToDo Title...">
+			<button type="submit"> Add </button>
+		</form>
+		<span class="check-all"><i class="icon far fa-check-square"></i>Check all</span>
+		<ul class="my-list">
+		</ul>
+		<button type="button" class="btn-hide">hide completed</button>
+		<dl>
+			<dt class="total">Total TODO:</dt>
+			<dd class="total-value"></dd>
+			<dt class="subtotal">Uncompleted TODO:</dt>
+			<dd class="subtotal-value"></dd>
+		</dl>
+	</div>
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js" defer></script>
+	<script src="js/jquery.main.js" defer></script>
+</body>
+</html>
